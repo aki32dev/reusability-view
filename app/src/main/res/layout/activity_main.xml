@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="62dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_sign_in" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="19dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="#471AA0"
+        android:textSize="30dp"/>
+    
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="13dp"
+        android:background="@drawable/bg_et"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email or User Name"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="13dp"
+        android:background="@drawable/bg_et"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="16dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="19dp"
+        android:text="Forget Password ?"
+        android:textStyle="bold"
+        android:textColor="#471AA0"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:paddingVertical="16dp"
+        android:background="@drawable/bg_bt"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
