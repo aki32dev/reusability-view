@@ -7,6 +7,8 @@ import androidx.core.content.ContextCompat
 import com.mp.reusability_view.R
 
 class EditTextBase : AppCompatEditText {
+    var valid = true
+
     constructor(context: Context) : super(context)
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
@@ -22,5 +24,13 @@ class EditTextBase : AppCompatEditText {
         setPadding(39, 30, 39, 30)
         compoundDrawablePadding = 16
         textSize = 15F
+    }
+
+    fun setBackground(value: Boolean) {
+        if (value) {
+            background = ContextCompat.getDrawable(context, R.drawable.bg_et)
+        } else {
+            background = ContextCompat.getDrawable(context, R.drawable.bg_et_wrong)
+        }
     }
 }
